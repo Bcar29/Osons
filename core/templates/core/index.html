@@ -1,0 +1,195 @@
+{% load static %}
+{% include "core/header.html" %}
+    <!-- BANNIÈRE VIDÉO HERO -->
+    <section class="hero-banner">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="static/videos/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in-up">Ensemble aujourd'hui,<br> Bâtissons demain</h1>
+            <a href="adhesion.html" class="btn-hero">Nous rejoindre</a>
+        </div>
+    </section>
+
+    <!-- SECTION PRÉSIDENT -->
+    <section class="section president-section">
+        <div class="container">
+            <h2 class="section-title">Mot du Président</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0 p-0">
+                    <div class="president-card fade-in">
+                        <img src="{% static 'core/images/profile.png' %}" alt="Président" class="president-image" >
+                    </div>
+                </div>
+                <div class="col-lg-7 p-0">
+                    <div class="article-preview fade-in-up">
+                        <h3>Notre vision pour l'avenir</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- CARROUSEL D'ACTUALITÉS -->
+    <section class="section news-carousel">
+        <div class="container">
+            <h2 class="section-title">Actualités récentes</h2>
+            
+            <!-- Carrousel Bootstrap -->
+            <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Articles 1, 2, 3 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news1.jpg" alt="Actualité 1" >
+                                    <div class="news-card-body">
+                                        <h4>Lancement du nouveau programme</h4>
+                                        <p>Nous sommes ravis d'annoncer le lancement de notre nouveau programme qui vise à soutenir les initiatives locales et à renforcer notre présence sur le terrain.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news2.jpg" alt="Actualité 2" >
+                                    <div class="news-card-body">
+                                        <h4>Conférence annuelle 2025</h4>
+                                        <p>Rejoignez-nous pour notre conférence annuelle où nous discuterons des défis et opportunités pour l'année à venir avec tous nos partenaires.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news3.jpg" alt="Actualité 3" >
+                                    <div class="news-card-body">
+                                        <h4>Partenariat stratégique</h4>
+                                        <p>Un nouveau partenariat stratégique vient d'être signé pour élargir notre réseau et renforcer notre impact au niveau national et international.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Articles 4, 5, 6 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news4.jpg" alt="Actualité 4" >
+                                    <div class="news-card-body">
+                                        <h4>Formation des membres</h4>
+                                        <p>Sessions de formation intensive organisées pour nos membres afin de renforcer leurs compétences et leur expertise dans leurs domaines respectifs.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news5.jpg" alt="Actualité 5" >
+                                    <div class="news-card-body">
+                                        <h4>Rapport d'activités 2024</h4>
+                                        <p>Découvrez notre rapport d'activités complet pour l'année 2024, incluant nos réalisations, nos défis et notre vision pour l'avenir.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news6.jpg" alt="Actualité 6" >
+                                    <div class="news-card-body">
+                                        <h4>Événement de networking</h4>
+                                        <p>Un événement de networking exceptionnel réunissant tous les acteurs clés de notre secteur pour échanger et créer des synergies.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Articles 7, 8, 9 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news7.jpg" alt="Actualité 7">
+                                    <div class="news-card-body">
+                                        <h4>Campagne de sensibilisation</h4>
+                                        <p>Lancement d'une grande campagne de sensibilisation pour toucher un maximum de citoyens et promouvoir nos valeurs fondamentales.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news8.jpg" alt="Actualité 8" >
+                                    <div class="news-card-body">
+                                        <h4>Innovation et technologie</h4>
+                                        <p>Découvrez comment nous intégrons les nouvelles technologies pour améliorer nos services et notre efficacité opérationnelle.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="news-card fade-in">
+                                    <img src="static/images/news9.jpg" alt="Actualité 9" >
+                                    <div class="news-card-body">
+                                        <h4>Journée portes ouvertes</h4>
+                                        <p>Participez à notre journée portes ouvertes et venez découvrir nos locaux, rencontrer notre équipe et nos projets en cours.</p>
+                                        <a href="article-detail.html" class="btn-read-more">Lire plus <i class="fas fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contrôles du carrousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+
+                <!-- Indicateurs -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION RÉSEAUX SOCIAUX -->
+    <section class="social-section">
+        <div class="container">
+            <h2>Suivez-nous sur les réseaux sociaux</h2>
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% include "core/footer.html" %}
