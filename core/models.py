@@ -96,3 +96,22 @@ class Federation(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class ContactMessage(models.Model):
+    nom = models.CharField(max_length=100, verbose_name="Nom")
+    prenom = models.CharField(max_length=100, verbose_name="Prénom")
+    email = models.EmailField(verbose_name="Email")
+    telephone = models.CharField(max_length=20, blank=True, null=True, verbose_name="Téléphone")
+    sujet = models.CharField(max_length=200, verbose_name="Sujet")
+    message = models.TextField(verbose_name="Message")
+    date_envoi = models.DateTimeField(auto_now_add=True, verbose_name="Date d'envoi")
+    lu = models.BooleanField(default=False, verbose_name="Lu")
+    
+    class Meta:
+        verbose_name = "Message de contact"
+        verbose_name_plural = "Messages de contact"
+        ordering = ['-date_envoi']
+    
+    def __str__(self):
+        return f"{self.prenom} {self.nom} - {self.sujet}"
