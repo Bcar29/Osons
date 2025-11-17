@@ -33,12 +33,12 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
-                            Qui sommes nous
+                            Organisation
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{% url 'president' %}">Le Coordonnateur</a></li>
-                            <li><a class="dropdown-item" href="{% url 'equipe' %}">Notre équipe</a></li>
-                            <li><a class="dropdown-item" href="{% url "initiatives" %}">Initiatives</a></li>
+                            <li><a class="dropdown-item" href="{% url 'president' %}">La Coordination</a></li>
+                            <li><a class="dropdown-item" href="{% url 'equipe' %}">N</a></li>
+                            <li><a class="dropdown-item" href="{% url 'initiatives' %}">Initiatives</a></li>
                             <li><a class="dropdown-item" href="{% url 'mission' %}">Mission</a></li>
                             <li><a class="dropdown-item" href="{% url 'instance' %}">Nos representations</a></li>
                         </ul>
@@ -46,9 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'articles' %}">Actualités</a>
                     </li>
-                    <li class="nav-item">
+                    {% comment %} <li class="nav-item">
                         <a class="nav-link" href="{% url 'articles' %}">Matam-Ma Commune-Ma Fierté</a>
-                    </li>
+                    </li> {% endcomment %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'articles' %}">Le projet</a>
                     </li>

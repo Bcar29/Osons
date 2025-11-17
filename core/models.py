@@ -88,11 +88,22 @@ class Initiative(models.Model):
 
 class RegionAdministrative(models.Model):
     name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
  
 class Federation(models.Model):
     region = models.ForeignKey(RegionAdministrative, on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
     image = models.ImageField(upload_to="core/federation", null=True, blank=True)
+    # description = SummernoteTextField()
 
     def __str__(self):
         return self.name
+
+class Projet(models.Model):
+    title = models.CharField( max_length=50)
+    content = SummernoteTextField()
+
+    def __str__(self):
+        return self.title

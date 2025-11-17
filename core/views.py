@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Article, Equipe, Federation, Theme, CategorieEquipe, RegionAdministrative
+from .models import Article, Projet, Equipe, Federation, Theme, CategorieEquipe, RegionAdministrative
 
 def index(request):
     articles_recents = Article.objects.all()[:6]
@@ -71,3 +71,7 @@ def instances(request):
 
 def initiatives(request):
     return render(request, 'core/initiatives.html')
+
+def projet(request):
+    projets = Projet.objects.all()
+    return render(request, 'core/porjets.html')
