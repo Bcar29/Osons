@@ -162,4 +162,43 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
+# Configuration Email
+# Configuration SMTP pour l'envoi réel des emails
+
+# Backend email - SMTP pour l'envoi réel
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Configuration SMTP
+# Exemple pour Gmail (vous pouvez utiliser d'autres services comme SendGrid, Mailgun, etc.)
+EMAIL_HOST = 'smtp.gmail.com'  # Pour Gmail, changez selon votre fournisseur
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ibrahimsempy@gmail.com'  # ⚠️ REMPLACEZ par votre adresse email Gmail
+EMAIL_HOST_PASSWORD = 'zwpzjxapnhonucqd'  # Mot de passe d'application Gmail configuré
+
+# Email par défaut (utilisé comme expéditeur)
+DEFAULT_FROM_EMAIL = 'ibrahimsempy@gmail.com'
+SERVER_EMAIL = 'ibrahimsempy@gmail.com'
+
+# Email de réception des messages de contact
+CONTACT_EMAIL = 'ibrahimsempy@gmail.com'
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# INSTRUCTIONS POUR CONFIGURER GMAIL :
+# ═══════════════════════════════════════════════════════════════════════════════
+# 
+# 1. Allez sur https://myaccount.google.com/
+# 2. Cliquez sur "Sécurité" dans le menu de gauche
+# 3. Activez la "Validation en deux étapes" si ce n'est pas déjà fait
+# 4. Une fois activée, allez dans "Mots de passe des applications"
+#    (ou directement : https://myaccount.google.com/apppasswords)
+# 5. Sélectionnez "Autre (nom personnalisé)" et entrez "Django Osons"
+# 6. Cliquez sur "Générer"
+# 7. Copiez le mot de passe à 16 caractères généré (sans espaces)
+# 8. Remplacez 'votre-mot-de-passe-app' ci-dessus par ce mot de passe
+#
+# ⚠️ IMPORTANT : N'utilisez JAMAIS votre mot de passe Gmail normal !
+#    Vous DEVEZ utiliser un "Mot de passe d'application" généré par Google.
+# ═══════════════════════════════════════════════════════════════════════════════
+
 

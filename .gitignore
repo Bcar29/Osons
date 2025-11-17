@@ -1,0 +1,45 @@
+# --- Django ---
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+db.sqlite3-journal
+
+# Migrations (optionnel : à garder si vous voulez suivre l’historique)
+# Si vous voulez les ignorer, décommentez :
+*/migrations/
+!*/migrations/__init__.py
+
+# Static & media (générés automatiquement)
+staticfiles/
+media/
+
+# --- Environment / virtualenv ---
+.env
+venv/
+.env.bak
+*.env
+
+# VS Code
+.vscode/
+
+# PyCharm / JetBrains
+.idea/
+
+# --- Python ---
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg-info/
+dist/
+build/
+
+# --- OS files ---
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
